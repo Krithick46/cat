@@ -12,11 +12,11 @@ function LogoBrand({ color }: { color: string }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
       <CatLogo style={{ width: 19, height: 26, color }} />
-      <div style={{ fontFamily: 'Oswald, sans-serif', fontSize: 24, letterSpacing: 1, lineHeight: 1 }}>
+      {/* <div style={{ fontFamily: 'Oswald, sans-serif', fontSize: 24, letterSpacing: 1, lineHeight: 1 }}>
         <span style={{ fontWeight: 700, color: '#111' }}>CAT</span>
         &nbsp;
         <span style={{ fontWeight: 400, color: '#444' }}>ENERGY</span>
-      </div>
+      </div> */}
     </div>
   )
 }

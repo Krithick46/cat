@@ -8,7 +8,7 @@ export function CatLogo({ style }: { style?: React.CSSProperties }) {
     // <svg viewBox="0 0 70.033 97" fill="none" style={style}>
     //   <path d={CAT_PATH} fill="currentColor" fillRule="nonzero" />
     // </svg>
-    <img src={logo} ></img>
+    <img src={logo} style={style} ></img>
   )
 }
 

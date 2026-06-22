@@ -8,10 +8,10 @@ import {
 type NavKey = 'glavnaya' | 'katalog' | 'podbor'
 type CornerStyle = 'Sharp' | 'Rounded'
 
-function LogoBrand({ color }: { color: string }) {
+function LogoBrand() {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
-      <CatLogo style={{ width: 19, height: 26, color }} />
+      <CatLogo  />
       {/* <div style={{ fontFamily: 'Oswald, sans-serif', fontSize: 24, letterSpacing: 1, lineHeight: 1 }}>
         <span style={{ fontWeight: 700, color: '#111' }}>CAT</span>
         &nbsp;
@@ -43,7 +43,7 @@ function HeroSection({
         position: 'absolute', top: 53, left: 110, width: 1220, height: 40,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between'
       }}>
-        <LogoBrand color={accent} />
+        <LogoBrand  />
         <div style={{ display: 'flex', alignItems: 'center', gap: 36 }}>
           {([
             ['glavnaya', 'главная'],
@@ -401,13 +401,13 @@ function LocationSection({ showMapPin }: { showMapPin: boolean }) {
   )
 }
 
-function FooterSection({ accent }: { accent: string }) {
+function FooterSection() {
   return (
     <div style={{ width: 1440, background: '#f2f2f2' }}>
       <div style={{
         padding: '58px 110px', display: 'flex', alignItems: 'center', justifyContent: 'space-between'
       }}>
-        <LogoBrand color={accent} />
+        <LogoBrand  />
         <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
           <a href="#" style={{ display: 'block', width: 29, height: 17 }}>
             <VKIcon style={{ width: 29, height: 17, color: '#666' }} />
@@ -451,7 +451,7 @@ export default function App() {
       <HowItWorks accent={accentColor} />
       <LiveExample accent={accentColor} radius={radius} />
       <LocationSection showMapPin={showMapPin} />
-      <FooterSection accent={accentColor} />
+      <FooterSection  />
     </div>
   )
 }
